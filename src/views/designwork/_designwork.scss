@@ -1,0 +1,181 @@
+.designwork {
+	width: 100%;
+	height: 90vh;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: $font-stack;
+	overflow: scroll;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	.title {
+		height: 6rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		h2 {
+			font-size: 8vmax;
+		}
+		.line {
+			display: none;
+		}
+	}
+
+	.design-grid {
+		width: 100%;
+		margin-bottom: 3rem;
+		display: flex;
+		flex-direction: column;
+		.line {
+			display: none;
+		}
+		.box {
+			width: 100%;
+			-webkit-transition: all 150ms ease;
+	    -moz-transition: all 150ms ease;
+	    transition: all 150ms ease;
+			box-shadow: none;
+			background-size: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.box:active {
+			box-shadow: inset 0 0 3rem hsla(0, 0%, 0%, 0.5);
+			z-index: -5;
+			-webkit-transition: all 150ms ease;
+	    -moz-transition: all 150ms ease;
+	    transition: all 150ms ease;
+			background-size: 99.5%;
+		}
+		.h1 {
+			height: 20rem;
+		}
+		.w1 {
+			width: 100%;
+		}
+		.h2 {
+			height: 20rem;
+		}
+		.w2 {
+			width: 100%;
+		}
+		.row {
+			display: flex;
+			justify-content: space-between;
+		}
+		.none {
+			display: none;
+		}
+		.proj-1 {
+			background-image: url('http://static1.squarespace.com/static/54680205e4b026f85a799825/54a39e77e4b010b9ae1f2ac3/54b99911e4b0ebc96da8b274/1421449490739/_MG_8374.jpg?format=1500w');
+		}
+		.proj-2 {
+			background-image: url('http://67.media.tumblr.com/tumblr_m06tgosbDn1qzy7wjo1_500.jpg');
+		}
+		.proj-3 {
+			background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5f4e0d34871129.56e0a9a77ce26.jpg');
+		}
+		.proj-4 {
+			background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a707f834236265.56c91ca8b87c0.jpg');
+		}
+		.proj-5 {
+			background-image: url('http://mindsparklemag.com/wp-content/uploads/2016/06/werkschau-konstanz-branding-identity-minimal-black-white-poster-type-typography-designblog-graphic-design-inspiration-best-inspire-www.mindsparklemag.com-04-1200x635.jpg');
+		}
+		.proj-6 {
+			background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/04dfb234335181.56cfdf1a2eb28.jpg');
+		}
+		.proj-7 {
+			background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fd5eb634328671.56ccb54e8dd4c.png');
+		}
+		.proj-8 {
+			background-image: url('http://mindsparklemag.com/wp-content/uploads/2016/05/Soap-Branding-corporate-design-stationery-pastel-tones-colors-minimal-business-card-gold-golden-deluxe-luxury-designblog-inspiration-www.mindsparklemag.com-01-1240x635.jpg');
+		}
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	.designwork {
+		.title {
+			height: auto;
+			h2 {
+				font-size: 4vmax;
+			}
+			.line {
+				display: block;
+				width: 100%;
+				height: 1rem;
+			}
+		}
+
+		.design-grid {
+			margin: 0 auto;
+			width: auto;
+			font-size: 2rem;
+			height: auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			.line {
+				display: block;
+				background-color: hsla(0, 0%, 0%, 0);
+			}
+
+			.box {
+				background-color: $contrast-color;
+				width: auto;
+				border-radius: 0.1em;
+				box-shadow: 0.2rem 0.3rem 5rem hsla(0, 0%, 0%, 0.3);
+				background-size: cover;
+				background-blend-mode: overlay;
+			}
+			.box:hover {
+				background-blend-mode: normal;
+				-webkit-transition: all 250ms ease;
+		    -moz-transition: all 250ms ease;
+		    transition: all 250ms ease;
+			}
+			// .box:active {
+			// 	box-shadow: none;
+			// 	z-index: -5;
+			// }
+			.box:active {
+				box-shadow: none;
+				z-index: -5;
+				background-size: cover;
+			}
+			.vertical {
+				width: 0.5em;
+				height: 100%;
+			}
+			.horizontal {
+				width: 100%;
+				height: 0.5em;
+			}
+
+			.h1 {
+				height: 4em;
+			}
+			.w1 {
+				width: 4em;
+			}
+			.h2 {
+				height: 8.5em;
+			}
+			.w2 {
+				width: 8.5em;
+			}
+			.column {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			.none {
+				display: block;
+			}
+		}
+	}
+}

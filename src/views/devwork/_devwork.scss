@@ -1,0 +1,201 @@
+.devwork {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: $font-stack;
+	overflow: scroll;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	.title {
+		width: 90%;
+		margin: 3rem 0;
+		h2 {
+			text-align: center;
+			font-size: 8vmax;
+			color: $main-color;
+		}
+		.line {
+			display: none;
+			width: 100%;
+			background-color: $main-color;
+		}
+	}
+	projects-container {
+		width: 90%;
+		.project {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			& > div {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				margin-bottom: 5rem;
+				.info {
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					.title {
+						margin: 0 0 1rem;
+						width: 100%;
+						h3 {
+							margin-bottom: 0.3rem;
+							color: $main-color;
+							font-size: 2rem;
+							text-align: right;
+						}
+						.line{
+							display: block;
+							margin: 0;
+							width: 100%;
+							height: 0.8rem;
+							background-color: $main-color;
+						}
+					}
+					.description {
+						margin-bottom: 2rem;
+						p {
+							color: $main-color;
+							text-align: right;
+							line-height: 1.5rem;
+						}
+					}
+					.github-btn {
+						height: 3rem;
+						width: 70%;
+						margin: 0 auto 2rem;
+						border: 0.1rem solid $main-color;
+						background-color: transparent;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						-webkit-transition: all 250ms ease;
+						-moz-transition: all 250ms ease;
+						transition: all 250ms ease;
+						p {
+							-webkit-transition: all 250ms ease;
+							-moz-transition: all 250ms ease;
+							transition: all 250ms ease;
+							color: $main-color;
+						}
+					}
+					.github-btn:hover {
+						background-color: $main-color;
+						border: none;
+						box-shadow: 0.2rem 0.2rem 3rem hsla(0, 0%, 0%, 1);
+						p {
+							color: $contrast-color;
+						}
+					}
+					.github-btn:active {
+						background-color: transparent;
+						border: 0.1rem solid $main-color;
+						p {
+							color: $main-color;
+						}
+					}
+				}
+
+				.preview {
+					box-shadow: 0.2rem 0.2rem 3rem hsla(0, 0%, 0%, 1);
+					.bar-top {
+						width: 100%;
+						height: 1rem;
+						background-color: #DDD;
+						border-radius: 0.3rem 0.3rem 0 0;
+						.browser-circles {
+							width: 2.5rem;
+							height: 100%;
+							margin-left: 0.5rem;
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							.circle {
+								width: 0.5rem;
+								height: 0.5rem;
+								border-radius: 1rem;
+							}
+							.red {
+								background-color: #d84c4c;
+							}
+							.yellow {
+								background-color: #d6b54d;
+							}
+							.green {
+								background-color: #87c650;
+							}
+						}
+					}
+					.content {
+						width: 100%;
+						height: 30rem;
+						iframe {
+							width: 100%;
+							height: 100%;
+						}
+					}
+					.bar-bottom {
+						width: 100%;
+						height: 1rem;
+						background-color: #DDD;
+						border-radius: 0 0 0.3rem 0.3rem;
+					}
+				}
+			}
+			.line {
+				width: 100%;
+				height: 0.1rem;
+				background-color: hsla(0, 0%, 100%, 0.5);
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	.devwork {
+		width: 100%;
+		.title {
+			width: auto;
+			h2 {
+				font-size: 4vmax;
+			}
+			.line {
+				display: block;
+			}
+		}
+		projects-container {
+			width: 80%;
+			.project {
+				& > div {
+					flex-direction: row;
+					.info {
+						width: 30%;;
+						.title {
+							.line{
+								height: 1rem;
+							}
+						}
+						.description {
+							margin-bottom: 4rem;
+						}
+						.github-btn {
+							margin: 0 auto;
+						}
+					}
+
+					.preview {
+						width: 68%;
+						.content {
+							height: 40rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
