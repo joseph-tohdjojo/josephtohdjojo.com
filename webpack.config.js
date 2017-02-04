@@ -18,7 +18,12 @@ module.exports = {
 			{
 				test: /\.scss$/,
 				include: /src/,
-				loaders: [ 'style', 'css', 'autoprefixer', 'sass' ]
+				loaders: [
+          'style',
+          'css',
+          'autoprefixer',
+          'sass'
+        ]
 			},
 			{
 				test: /\.html$/,
