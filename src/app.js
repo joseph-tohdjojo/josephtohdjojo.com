@@ -2,7 +2,7 @@
 import './all.scss';
 
 // IMAGES
-
+import './assets/img/background-grid.png';
 
 // CONFIG & RUN
 import config from './appconfig.js';
