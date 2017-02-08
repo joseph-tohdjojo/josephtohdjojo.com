@@ -25,7 +25,7 @@ export default function() {
 			desc: 'This is my portfolio site. Check out the preview. The preview itself is a full functioning website. No <img> tags here. HIRE ME!',
       img: portfolioImg,
       siteUrl: 'https://www.josephtohdjojo.com/',
-			github: 'https://github.com/joseph-tohdjojo/joseph-tohdjojo.github.io'
+			github: 'https://github.com/joseph-tohdjojo/josephtohdjojo.com'
 		},
 		{
 			title: 'Random Donald Trump Quote Generator',
