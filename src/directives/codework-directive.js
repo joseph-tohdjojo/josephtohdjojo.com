@@ -7,7 +7,7 @@ export default function() {
 		scope: {},
 		controller: function($scope, $sce, projectsSrv) {
 			$scope.projects = projectsSrv.getProjects().map(function(item) {
-				item.siteUrl = $sce.trustAsResourceUrl(item.siteUrl.toString());
+				item.siteUrl = $sce.trustAsResourceUrl(item.siteUrl);
 				return item;
 			});
 		}

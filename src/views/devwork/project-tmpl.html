@@ -8,7 +8,8 @@
 			<div class="description">
 				<p>{{proj.desc}}</p>
 			</div>
-			<a class="github-btn" ng-href="{{proj.siteUrl}}" target="_blank"><p>VIEW PROJECT</p></a>
+			<a class="project-btn" ng-href="{{proj.siteUrl}}" target="_blank"><p>VIEW PROJECT</p></a>
+      <a class="github-btn" ng-href="{{proj.github}}" target="_blank"><p>View code on Github</p></a>
 		</div>
 		<div class="preview">
 			<div class="bar-top">
@@ -19,7 +20,7 @@
 				</div>
 			</div>
 			<div class="content">
-				<iframe ng-src="{{proj.siteUrl}}" style="background: #FFFFFF;" ></iframe>
+        <img ng-src="bundle/{{proj.img}}" alt="">
 			</div>
 			<div class="bar-bottom"></div>
 		</div>
