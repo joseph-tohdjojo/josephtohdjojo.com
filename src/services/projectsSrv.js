@@ -22,7 +22,7 @@ export default function() {
 		},
 		{
 			title: 'MY PORTFOLIO PAGE',
-			desc: 'This is my portfolio site. Check out the preview. The preview itself is a full functioning website. No <img> tags here. HIRE ME!',
+			desc: 'This is my portfolio site and my first AngularJS project.',
       img: portfolioImg,
       siteUrl: 'https://www.josephtohdjojo.com/',
 			github: 'https://github.com/joseph-tohdjojo/josephtohdjojo.com'
