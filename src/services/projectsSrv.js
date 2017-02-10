@@ -15,7 +15,7 @@ export default function() {
 		},
 		{
 			title: 'YENTE',
-			desc: 'This is a personal project that I built during my time at DevMountain Coding Bootcamp in Provo, UT. I was awarded "Best Overall Web App" and this project is now featured on DevMountain\'s website (www.devmounta.in/students).',
+			desc: 'This is a personal project that I built during my time at DevMountain Coding Bootcamp in Provo, UT. For this project, I decided to clone www.cargocollective.com. I was awarded "Best Overall Web App" and this project is now featured on DevMountain\'s website (www.devmounta.in/students).',
       img: yenteImg,
       siteUrl: '107.170.210.151',
 			github: 'https://github.com/joseph-tohdjojo/Yente'
