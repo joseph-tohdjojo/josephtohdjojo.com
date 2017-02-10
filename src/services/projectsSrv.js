@@ -1,7 +1,7 @@
-import pulpImg from './images/pulp.png';
-import yenteImg from './images/yente.png';
-import portfolioImg from './images/portfolio.png';
-import quoteImg from './images/quote.png';
+import pulpImg from './images/pulp.jpg';
+import yenteImg from './images/yente.jpg';
+import portfolioImg from './images/portfolio.jpg';
+import quoteImg from './images/quote.jpg';
 
 export default function() {
 
