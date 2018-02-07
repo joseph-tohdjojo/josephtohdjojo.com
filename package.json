@@ -19,6 +19,7 @@
   "homepage": "https://github.com/joseph-tohdjojo/joseph-tohdjojo.github.io#readme",
   "dependencies": {
     "express": "^4.14.1",
+    "nodemon": "^1.14.12",
     "path": "^0.12.7"
   },
   "devDependencies": {
