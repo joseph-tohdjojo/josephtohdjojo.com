@@ -20,7 +20,7 @@ export default function() {
 			name: 'Adobe Illustrator',
 			class: 'AI',
 			width: 'w1',
-			svg: 'bundle/assets/AI-400H.svg'
+			svg: 'bundle/assets/AI-400h.svg'
 		},
 		{
 			name: 'Adobe Photoshop',
