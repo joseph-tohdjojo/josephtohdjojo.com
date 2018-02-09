@@ -5,7 +5,7 @@ import './../assets/img/sprite/CSS3-400H.svg';
 import './../assets/img/sprite/Sass-400H.svg';
 import './../assets/img/sprite/bootstrap-400H.svg';
 import './../assets/img/sprite/JS-400H.svg';
-import './../assets/img/sprite/JQueryLogo-400H.svg';
+import './../assets/img/sprite/Webpack-400H.svg';
 import './../assets/img/sprite/Git-400H.svg';
 import './../assets/img/sprite/Angular-400H.svg';
 import './../assets/img/sprite/React-400H.svg';
@@ -59,10 +59,10 @@ export default function() {
 			svg: 'bundle/assets/JS-400H.svg'
 		},
 		{
-			name: 'JQuery',
-			class: 'JQ',
+			name: 'Webpack',
+			class: 'Webpack',
 			width: 'w1',
-			svg: 'bundle/assets/JQueryLogo-400H.svg'
+			svg: 'bundle/assets/Webpack-400H.svg'
 		},
 		{
 			name: 'Git',
