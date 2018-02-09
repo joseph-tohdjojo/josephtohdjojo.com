@@ -5,33 +5,34 @@ export default function() {
     restrict: 'E',
     template: joeNav,
     scope: {},
-    controller: function(
-      $scope,
-      $rootScope,
-      underConstructionService,
-      $window,
-      navSrv
-    ) {
-      $scope.navBtns = underConstructionService.views
-      $scope.getWindowSize = function() {
-        navSrv.getWindowSize($window.innerWidth)
-      }
-      angular.element($window).bind('resize', function() {
-        $scope.getWindowSize()
-        $scope.$digest()
-      })
+    controller: [
+      '$scope',
+      '$rootScope',
+      'underConstructionService',
+      '$window',
+      'navSrv',
+      function($scope, $rootScope, underConstructionService, $window, navSrv) {
+        $scope.navBtns = underConstructionService.views
+        $scope.getWindowSize = function() {
+          navSrv.getWindowSize($window.innerWidth)
+        }
+        angular.element($window).bind('resize', function() {
+          $scope.getWindowSize()
+          $scope.$digest()
+        })
 
-      $rootScope.$on('$stateChangeStart', function(
-        event,
-        toState,
-        toParams,
-        fromState,
-        fromParams
-      ) {
-        $scope.stateName = toState.name
-        console.log($scope)
-      })
-    },
+        $rootScope.$on('$stateChangeStart', function(
+          event,
+          toState,
+          toParams,
+          fromState,
+          fromParams
+        ) {
+          $scope.stateName = toState.name
+          console.log($scope)
+        })
+      },
+    ],
     link: function(scope, el, attr) {
       scope.$watch('stateName', function() {
         scope.getWindowSize()
