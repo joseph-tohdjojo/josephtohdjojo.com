@@ -32,119 +32,118 @@
 }
 
 body {
+  .line {
+    height: 1rem;
+    background-color: $contrast-color;
+  }
+  logo-directive {
+    height: 10vh;
+    position: absolute;
+    left: 10%;
+    z-index: 5;
+    border: none;
+    display: flex;
+    align-items: center;
+    a {
+      svg {
+        height: 5vh;
+        path {
+          -webkit-transition: all 250ms ease;
+          -moz-transition: all 250ms ease;
+          transition: all 250ms ease;
+          fill: $accent-color;
+          box-shadow: 0.2rem 0.2rem 1rem hsla(0, 0%, 0%, 1);
+        }
+      }
+    }
+    &.logo-white {
+      a {
+        svg:hover {
+          path {
+            fill: $contrast-color;
+          }
+        }
+      }
+    }
 
-	.line {
-		height: 1rem;
-		background-color: $contrast-color;
-	}
-	logo-directive {
-		height: 10vh;
-		position: absolute;
-		left: 10%;
-		z-index: 5;
-		border: none;
-		display: flex;
-		align-items: center;
-		a {
-			svg {
-				height: 5vh;
-				path {
-					-webkit-transition: all 250ms ease;
-					-moz-transition: all 250ms ease;
-					transition: all 250ms ease;
-					fill: $accent-color;
-					box-shadow: 0.2rem 0.2rem 1rem hsla(0, 0%, 0%, 1);
-				}
-			}
-		}
-		&.logo-white {
-			a {
-				svg:hover {
-					path {
-						fill: $contrast-color;
-					}
-				}
-			}
-		}
+    &.logo-black {
+      a {
+        svg:hover {
+          path {
+            fill: $main-color;
+          }
+        }
+      }
+    }
+  }
 
-		&.logo-black {
-			a {
-				svg:hover {
-					path {
-						fill: $main-color;
-					}
-				}
-			}
-		}
-	}
+  ui-view {
+    background-image: url('./assets/img/background-grid.png');
+    background-size: contain;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    margin-top: 10vh;
+  }
 
-	ui-view {
-		background-image: url('/bundle/assets/background-grid.png');
-		background-size: contain;
-		background-position: center;
-		height: 90vh;
-		width: 100%;
-		position: absolute;
-		margin-top: 10vh;
-	}
-
-	navigation-directive {
-		height: 10vh;
-		position: fixed;
-		top: 0;
-		box-shadow: -0.2rem -0.2rem 1.5rem hsla(0, 0%, 0%, 1);
-	}
+  navigation-directive {
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    box-shadow: -0.2rem -0.2rem 1.5rem hsla(0, 0%, 0%, 1);
+  }
 }
 
 @media only screen and (min-width: 769px) {
-	body {
-		ui-view {
-			width: 100%;
-			position: absolute;
-			margin-top: 0;
-			top: 0;
-		}
-		navigation-directive {
-			position: fixed;
-			top: auto;
-			bottom: 0;
-			box-shadow: 0.2rem 0.2rem 1.5rem hsla(0, 0%, 0%, 1);
-		}
+  body {
+    ui-view {
+      width: 100%;
+      position: absolute;
+      margin-top: 0;
+      top: 0;
+    }
+    navigation-directive {
+      position: fixed;
+      top: auto;
+      bottom: 0;
+      box-shadow: 0.2rem 0.2rem 1.5rem hsla(0, 0%, 0%, 1);
+    }
 
-		logo-directive {
-			z-index: 5;
-			border: none;
-			position: static;
-			a {
-				position: absolute;
-				top: 3rem;
-				left: 3rem;
-				border: none;
-				z-index: 5;
-				svg {
-					width: 4rem;
-					height: auto;
-				}
-			}
-			&.logo-white {
-				a {
-					svg:hover {
-						path {
-							fill: $main-color;
-						}
-					}
-				}
-			}
+    logo-directive {
+      z-index: 5;
+      border: none;
+      position: static;
+      a {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        border: none;
+        z-index: 5;
+        svg {
+          width: 4rem;
+          height: auto;
+        }
+      }
+      &.logo-white {
+        a {
+          svg:hover {
+            path {
+              fill: $main-color;
+            }
+          }
+        }
+      }
 
-			&.logo-black {
-				a {
-					svg:hover {
-						path {
-							fill: $contrast-color;
-						}
-					}
-				}
-			}
-		}
-	}
+      &.logo-black {
+        a {
+          svg:hover {
+            path {
+              fill: $contrast-color;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -5,11 +5,11 @@ $contrast-color: #232323;
 $accent-color: #e2b73d;
 
 .contrastBg {
-    background-color: $contrast-color;
+  background-color: $contrast-color;
 }
 
 .mainBg {
-    background-color: $main-color;
+  background-color: $main-color;
 }
 
 a,
@@ -93,14 +93,14 @@ u,
 ul,
 var,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
-    color: $contrast-color;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  color: $contrast-color;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -114,46 +114,46 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:after,
 blockquote:before,
 q:after,
 q:before {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 button {
-    outline: none;
-    border: none;
-    cursor: pointer;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
