@@ -1,5 +1,3 @@
-// import angular from 'angular'
-// import angularUIRouter from '@uirouter/angularjs'
 import './all.scss'
 
 // CONFIG & RUN
