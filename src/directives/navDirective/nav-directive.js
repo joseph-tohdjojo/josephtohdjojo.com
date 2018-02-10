@@ -29,7 +29,6 @@ export default function() {
           fromParams
         ) {
           $scope.stateName = toState.name
-          console.log($scope)
         })
       },
     ],
@@ -39,7 +38,6 @@ export default function() {
         // angular.element(document.querySelectorAll('.nav-item')).css('display', 'none');
         el.css('height', '10vh')
         var name = scope.stateName
-        console.log(scope, el, attr)
         var body = angular.element(document.querySelectorAll('body'))
         if (name === 'skills' || name === 'devwork') {
           angular
