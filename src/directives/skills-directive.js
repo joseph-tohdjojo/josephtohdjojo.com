@@ -7,9 +7,13 @@ const skillsSrv = function() {
       </div>
     `,
     scope: {},
-    controller: function($scope, skillsService) {
-      $scope.skills = skillsService.getSkills()
-    },
+    controller: [
+      '$scope',
+      'skillsService',
+      function($scope, skillsService) {
+        $scope.skills = skillsService.getSkills()
+      },
+    ],
   }
 }
 
