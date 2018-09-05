@@ -1,0 +1,54 @@
+body {
+  color: #fff;
+  font-family: 'Benton Sans', 'Helvetica Neue', helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-style: italic;
+  line-height: 1.4;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+
+  .name &,
+  &.icon {
+    text-decoration: none;
+  }
+}
+
+.name {
+  font-style: normal;
+}
+
+svg {
+  fill: #fff;
+}
+
+.icon-container {
+  margin: 10px 0;
+}
+
+.icon {
+  margin-right: 10px;
+  width: 40px;
+}
+
+.background {
+  left: 50%;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}

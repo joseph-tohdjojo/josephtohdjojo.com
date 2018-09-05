@@ -22,18 +22,13 @@
   },
   "homepage": "https://github.com/joseph-tohdjojo/joseph-tohdjojo.github.io#readme",
   "dependencies": {
-    "@uirouter/angularjs": "^1.0.14",
-    "angular": "^1.5.0",
-    "babel-preset-env": "^1.7.0",
     "concurrently": "^3.5.1",
     "onchange": "3.3.0",
     "parcel-bundler": "^1.8.1",
     "prettier": "1.10.2"
   },
   "devDependencies": {
-    "autoprefixer": "^7.2.5",
-    "node-sass": "^4.9.0",
-    "postcss-custom-properties": "^6.2.0",
-    "postcss-modules": "^1.1.0"
+    "autoprefixer": "^9.1.5",
+    "node-sass": "^4.9.3"
   }
 }
