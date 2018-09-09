@@ -1,15 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:900');
+
+$primary: 'Open Sans';
+$secondary: 'Montserrat';
+$sans-serif-fallbacks: 'Helvetica Neue', helvetica, arial, sans-serif;
+$color: rgba(255, 255, 255, 0.3);
+$color-hover: rgba(255, 255, 255, 0.5);
+$transition: all 400ms;
+
 body {
-  color: #fff;
-  font-family: 'Benton Sans', 'Helvetica Neue', helvetica, arial, sans-serif;
-  margin: 2em;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
+  color: $color;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-family: '#{$primary}', $sans-serif-fallbacks;
+  // font-weight: 900;
+  letter-spacing: 0.05rem;
+}
+
+p {
+  font-family: '#{$secondary}', $sans-serif-fallbacks;
+  font-weight: 400;
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p {
   font-style: italic;
   line-height: 1.4;
@@ -19,11 +35,20 @@ p {
 a {
   color: inherit;
   text-decoration: underline;
+  transition: $transition;
+
+  &:hover {
+    color: $color-hover;
+  }
 
   .name &,
   &.icon {
     text-decoration: none;
   }
+}
+
+.container {
+  padding: 2em 2em 4em;
 }
 
 .name {
@@ -42,9 +67,16 @@ a {
   width: 20px;
 
   svg {
-    fill: #fff;
+    fill: $color;
     height: 20px;
+    transition: $transition;
     width: 20px;
+  }
+
+  &:hover {
+    svg {
+      fill: $color-hover;
+    }
   }
 }
 
@@ -52,6 +84,7 @@ a {
   left: 50%;
   min-height: 100vh;
   min-width: 100vw;
+  opacity: 1;
   position: fixed;
   top: 50%;
   transform: translate(-50%, -50%);
