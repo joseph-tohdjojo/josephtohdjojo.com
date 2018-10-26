@@ -22,9 +22,9 @@
   },
   "homepage": "https://github.com/joseph-tohdjojo/joseph-tohdjojo.github.io#readme",
   "dependencies": {
-    "concurrently": "^3.5.1",
+    "concurrently": "3.5.1",
     "onchange": "3.3.0",
-    "parcel-bundler": "^1.8.1",
+    "parcel-bundler": "1.8.1",
     "prettier": "1.10.2"
   },
   "devDependencies": {
