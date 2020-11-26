@@ -34,7 +34,7 @@ a {
   width: 100vw;
 
   &-name {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     line-height: 1;
     text-decoration: none;
@@ -50,7 +50,6 @@ a {
 }
 
 .main {
-  // align-items: center;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -63,8 +62,9 @@ a {
   }
 
   .link {
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
     text-decoration: none;
-    margin-right: 0.2rem;
   }
 
   &-image {
@@ -74,7 +74,7 @@ a {
 
   &-image-caption {
     display: flex;
-    font-size: 0.3rem;
+    font-size: 0.6rem;
     justify-content: flex-end;
   }
 }
