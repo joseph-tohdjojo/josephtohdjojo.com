@@ -7,6 +7,10 @@ $color: hsl(0, 0%, 80%);
 $color-hover: hsl(0, 0%, 50%);
 $transition: color 400ms;
 
+html {
+  height: 100%;
+}
+
 body {
   box-sizing: border-box;
   display: grid;
