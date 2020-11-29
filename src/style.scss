@@ -8,7 +8,12 @@ $color-hover: hsl(0, 0%, 50%);
 $transition: color 400ms;
 
 body {
+  box-sizing: border-box;
+  display: grid;
   font-family: '#{$primary}', $sans-serif-fallbacks;
+  font-size: 1.1rem;
+  grid-auto-rows: auto 1fr;
+  height: 100%;
 }
 
 a {
@@ -29,7 +34,6 @@ a {
 .header {
   left: 0;
   padding: 0.4rem;
-  position: absolute;
   top: 0;
   width: 100vw;
 
@@ -52,7 +56,6 @@ a {
 .main {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
   margin: 0 auto;
   width: 30rem;
@@ -73,8 +76,9 @@ a {
   }
 
   &-image-caption {
+    color: $color-hover;
     display: flex;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     justify-content: flex-end;
   }
 }
