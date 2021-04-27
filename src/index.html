@@ -42,11 +42,14 @@
       <img class="main-image" src="https://res.cloudinary.com/mrhamburger/image/upload/c_scale,q_100,w_1000/v1606384543/IMG_2744_fotk2q.jpg" alt="center image">
 
       <div class="main-image-caption">
-          © 2020 Joe Toh Djojo
+          ©&nbsp;<span id="copyright-year"></span>&nbsp;Joe Toh Djojo
       </div>
     </main>
 
 
+    <script>
+      document.getElementById('copyright-year').innerHTML = new Date().getFullYear();
+    </script>
     <script>
       (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
