@@ -74,8 +74,15 @@ a {
     text-decoration: none;
   }
 
-  &-image {
+  .image-wrapper {
+    align-items: center;
+    display: flex;
+    height: 24rem;
+    width: 30rem;
     margin: 0.2rem 0;
+  }
+
+  &-image {
     width: 100%;
   }
 
@@ -90,11 +97,21 @@ a {
 @media (min-width: 50rem) {
   .main {
     width: 48rem;
+
+    .image-wrapper {
+      height: 39rem;
+      width: 48rem;
+    }
   }
 }
 
 @media (min-width: 70rem) {
   .main {
     width: 60rem;
+
+    .image-wrapper {
+      height: 48rem;
+      width: 60rem;
+    }
   }
 }
